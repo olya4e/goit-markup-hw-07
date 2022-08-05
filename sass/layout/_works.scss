@@ -1,0 +1,38 @@
+.working .title,
+.clients .title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+}
+
+.working .title,
+.team .title,
+.clients .title {
+    color: var(--title-color);
+    font-size: 36px;
+    line-height: 1.16;
+}
+
+.works .item {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+}
+
+.works-overlay {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    min-height: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}

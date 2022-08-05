@@ -1,0 +1,48 @@
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-hdr-color);
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.contacts .item {
+    display: flex;
+    align-items: center;
+    transition: color var(--transition-dur-func);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.contacts .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color var(--transition-dur-func);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+
+.icon-contact {
+    width: 16px;
+    height: 12px;
+    fill: #757575;
+    margin-right: 10px;
+    transition: color var(--transition-dur-func);
+}
+
+.contacts .item:hover .icon-contact,
+.contacts .item:focus .icon-contact {
+    fill: var(--accent-color);
+}
