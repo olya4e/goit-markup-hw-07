@@ -37,7 +37,7 @@ img {
   border: 0;
 }
 
-.list {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -47,7 +47,7 @@ button {
   cursor: pointer;
 }
 
-.list-collection {
+.list__collection {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -115,7 +115,7 @@ button {
   color: var(--logo-color);
 }
 
-.logo-web {
+.logo__web {
   color: var(--accent-color);
   display: flex;
   font-family: "Raleway";
@@ -125,7 +125,7 @@ button {
   text-decoration: none;
 }
 
-.gen-nav {
+.nav-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -138,10 +138,11 @@ button {
 
 .navigation {
   display: flex;
+  align-items: center;
   column-gap: 50px;
 }
 
-.navigation .link {
+.navigation__link {
   display: block;
   color: var(--title-color);
   font-weight: 500;
@@ -150,25 +151,27 @@ button {
   text-decoration: none;
   transition: color var(--transition-dur-func);
 }
-.navigation .link .link:hover, .navigation .link .link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
 }
 
-.link.current {
+.navigation__link_current {
+  position: relative;
   color: var(--accent-color);
 }
-.link.current::after {
+.navigation__link_current::after {
   display: inline-block;
   content: "";
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-  position: relative;
-  bottom: -28px;
+  position: absolute;
+  left: 0;
+  bottom: -32px;
 }
 
-.button.main {
+.hero__button {
   display: block;
   margin: auto;
   border: 1px solid transparent;
@@ -184,7 +187,7 @@ button {
   letter-spacing: 0.06em;
   transition: background-color var(--transition-dur-func);
 }
-.button.main:hover {
+.hero__button:hover {
   background-color: #188CE8;
 }
 
@@ -475,16 +478,16 @@ button {
   gap: 50px;
 }
 
-.contacts .item {
+.contacts__item {
   display: flex;
   align-items: center;
   transition: color var(--transition-dur-func);
 }
-.contacts .item:hover, .contacts .item:focus {
+.contacts__item:hover, .contacts__item:focus {
   color: var(--accent-color);
 }
 
-.contacts .link {
+.contacts__link {
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -492,11 +495,11 @@ button {
   text-decoration: none;
   transition: color var(--transition-dur-func);
 }
-.contacts .link:hover, .contacts .link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
 }
 
-.icon-contact {
+.contacts__icon {
   width: 16px;
   height: 12px;
   fill: #757575;
@@ -504,8 +507,8 @@ button {
   transition: color var(--transition-dur-func);
 }
 
-.contacts .item:hover .icon-contact,
-.contacts .item:focus .icon-contact {
+.contacts__item:hover .contacts__icon,
+.contacts__item:focus .contacts__icon {
   fill: var(--accent-color);
 }
 
@@ -522,7 +525,7 @@ button {
   background-position: center;
 }
 
-.hero .title {
+.hero__title {
   width: 700px;
   margin-top: 106px;
   margin-bottom: 40px;
@@ -536,11 +539,11 @@ button {
   text-transform: uppercase;
 }
 
-.features .item {
+.features__item {
   width: calc((100% - 90px) / 4);
 }
 
-.features .title {
+.features__title {
   margin-top: 0;
   margin-bottom: 10px;
   color: var(--title-color);
@@ -549,13 +552,13 @@ button {
   text-decoration: none;
 }
 
-.features .text {
+.features__text {
   line-height: 1.7;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.box-icon-features {
+.features__iconbox {
   display: flex;
   width: 270px;
   height: 120px;
@@ -565,33 +568,27 @@ button {
   margin-bottom: 30px;
 }
 
-.icon-features {
+.features__icon {
   width: 70px;
   height: 70px;
   justify-content: center;
   align-items: center;
 }
 
-.working .title,
-.clients .title {
+.section__title {
   margin-top: 0;
   margin-bottom: 50px;
-}
-
-.working .title,
-.team .title,
-.clients .title {
   color: var(--title-color);
   font-size: 36px;
   line-height: 1.16;
 }
 
-.works .item {
+.works__item {
   position: relative;
   width: calc((100% - 60px) / 3);
 }
 
-.works-overlay {
+.works__overlay {
   position: absolute;
   margin: 0;
   width: 100%;
@@ -702,7 +699,7 @@ button {
   color: var(--primary-white-color);
 }
 
-.menu.list {
+.menu__list {
   display: flex;
   justify-content: center;
   gap: 8px;

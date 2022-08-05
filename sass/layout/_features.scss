@@ -1,8 +1,8 @@
-.features .item {
+.features__item {
     width: calc((100% - 90px) / 4);
 }
 
-.features .title {
+.features__title {
     margin-top: 0;
     margin-bottom: 10px;
     color: var(--title-color);
@@ -11,13 +11,13 @@
     text-decoration: none;
 }
 
-.features .text {
+.features__text {
     line-height: 1.7;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.box-icon-features {
+.features__iconbox {
     display: flex;
     width: 270px;
     height: 120px;
@@ -27,7 +27,7 @@
     margin-bottom: 30px;
 }
 
-.icon-features {
+.features__icon {
     width: 70px;
     height: 70px;
     justify-content: center;

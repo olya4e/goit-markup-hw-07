@@ -10,7 +10,7 @@
     gap: 50px;
 }
 
-.contacts .item {
+.contacts__item {
     display: flex;
     align-items: center;
     transition: color var(--transition-dur-func);
@@ -20,7 +20,7 @@
     }
 }
 
-.contacts .link {
+.contacts__link {
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
@@ -34,7 +34,7 @@
 }
 
 
-.icon-contact {
+.contacts__icon {
     width: 16px;
     height: 12px;
     fill: #757575;
@@ -42,7 +42,7 @@
     transition: color var(--transition-dur-func);
 }
 
-.contacts .item:hover .icon-contact,
-.contacts .item:focus .icon-contact {
+.contacts__item:hover .contacts__icon,
+.contacts__item:focus .contacts__icon {
     fill: var(--accent-color);
 }

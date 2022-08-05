@@ -1,24 +1,17 @@
-.working .title,
-.clients .title {
+.section__title{
     margin-top: 0;
     margin-bottom: 50px;
-
-}
-
-.working .title,
-.team .title,
-.clients .title {
     color: var(--title-color);
     font-size: 36px;
     line-height: 1.16;
 }
 
-.works .item {
+.works__item {
     position: relative;
     width: calc((100% - 60px) / 3);
 }
 
-.works-overlay {
+.works__overlay {
     position: absolute;
     margin: 0;
     width: 100%;
