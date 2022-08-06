@@ -47,7 +47,7 @@ button {
   cursor: pointer;
 }
 
-.list__collection {
+.list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -79,7 +79,7 @@ button {
   column-gap: 10px;
 }
 
-.social-link {
+.social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,19 +88,19 @@ button {
   border-radius: 50%;
   transition: background-color var(--transition-dur-func);
 }
-.social-link:hover, .social-link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color);
 }
 
-.social-icon {
+.social-list__icon {
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
   transition: fill var(--transition-dur-func);
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
   fill: var(--primary-white-color);
 }
 
@@ -191,7 +191,7 @@ button {
   background-color: #188CE8;
 }
 
-.button.filter {
+.filter__button {
   display: block;
   font-family: inherit;
   border: 1px solid transparent;
@@ -205,7 +205,7 @@ button {
   letter-spacing: 0.03em;
   transition: color var(--transition-dur-func), background-color var(--transition-dur-func);
 }
-.button.filter:hover, .button.filter:focus {
+.filter__button:hover, .filter__button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -611,7 +611,7 @@ button {
   background-color: var(--bg-grey-color);
 }
 
-.team .item {
+.team__item {
   width: calc((100% - 90px) / 4);
 }
 
@@ -620,7 +620,7 @@ button {
   margin-bottom: 50px;
 }
 
-.team .name {
+.team__name {
   margin-bottom: 10px;
   margin-top: 0;
   color: var(--title-color);
@@ -629,14 +629,14 @@ button {
   line-height: 1.18;
 }
 
-.team .position {
+.team__position {
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
 }
 
-.team-card-title {
+.team__card-title {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 10px;
@@ -646,18 +646,18 @@ button {
   background-color: var(--primary-white-color);
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
   column-gap: 30px;
 }
 
-.clients-item {
+.clients__item {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -665,20 +665,20 @@ button {
   height: 92px;
   transition: box-shadow var(--transition-dur-func);
 }
-.clients-link:hover, .clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.clients-icon {
+.clients__icon {
   width: 106px;
   height: 60px;
   fill: #AFB1B8;
   transition: fill var(--transition-dur-func);
 }
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
   fill: var(--accent-color);
 }
 
@@ -694,12 +694,12 @@ button {
   line-height: 1.87;
 }
 
-.button.filter.current {
+.filter__button_current {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
 
-.menu__list {
+.filter {
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -707,10 +707,10 @@ button {
   margin-bottom: 50px;
 }
 
-.menu-item {
+.filter__item {
   transition: box-shadow var(--transition-dur-func);
 }
-.menu-item:hover, .menu-item:focus {
+.filter__item:hover, .filter__item:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 

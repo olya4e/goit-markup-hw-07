@@ -2,7 +2,7 @@
     background-color: var(--bg-grey-color);
 }
 
-.team .item {
+.team__item {
     width: calc((100% - 90px) / 4);
 }
 
@@ -11,7 +11,7 @@
     margin-bottom: 50px;
 }
 
-.team .name {
+.team__name {
     margin-bottom: 10px;
     margin-top: 0;
     color: var(--title-color);
@@ -20,14 +20,14 @@
     line-height: 1.18;
 }
 
-.team .position {
+.team__position {
     margin-top: 0;
     margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.18;
 }
 
-.team-card-title {
+.team__card-title {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 10px;

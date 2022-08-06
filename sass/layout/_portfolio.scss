@@ -10,12 +10,12 @@
     line-height: 1.87;
 }
 
-.button.filter.current {
+.filter__button_current {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
 
-.menu__list {
+.filter {
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -23,7 +23,7 @@
     margin-bottom: 50px;
 }
 
-.menu-item {
+.filter__item{
     transition: box-shadow var(--transition-dur-func);
     &:hover,
     &:focus {

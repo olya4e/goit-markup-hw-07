@@ -5,7 +5,7 @@
 
 }
 
-.social-link {
+.social-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,14 +21,14 @@
 
 
 
-.social-icon {
+.social-list__icon {
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
     transition: fill var(--transition-dur-func);
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
     fill: var(--primary-white-color);
 }
